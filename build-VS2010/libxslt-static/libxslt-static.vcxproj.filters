@@ -16,6 +16,9 @@
     <Filter Include="Source Files\libxslt">
       <UniqueIdentifier>{b447aae8-d6a8-414d-b212-aa99776cfdb3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\libxslt">
+      <UniqueIdentifier>{765d9030-644e-417a-8afc-1de058c4d2a6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\libxslt\pattern.c">
@@ -77,74 +80,74 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\libxslt\numbersInternals.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\pattern.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\preproc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\security.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\templates.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\transform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\variables.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\win32config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\xslt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\xsltconfig.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\xsltexports.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\xsltInternals.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\xsltlocale.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libxslt\xsltutils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\libxslt\attributes.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libxslt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\libxslt\documents.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libxslt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\libxslt\extensions.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libxslt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\libxslt\extra.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libxslt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\libxslt\functions.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libxslt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\libxslt\imports.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libxslt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\libxslt\keys.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libxslt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\libxslt\libxslt.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libxslt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\libxslt\namespaces.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\numbersInternals.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\pattern.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\preproc.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\security.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\templates.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\transform.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\variables.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\win32config.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\xslt.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\xsltconfig.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\xsltexports.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\xsltInternals.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\xsltlocale.h">
+      <Filter>Header Files\libxslt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libxslt\xsltutils.h">
+      <Filter>Header Files\libxslt</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

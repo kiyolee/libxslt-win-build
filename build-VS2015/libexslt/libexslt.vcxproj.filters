@@ -13,51 +13,57 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\libexslt">
+      <UniqueIdentifier>{205fddda-ed25-40b2-b0c0-52f0935d4e0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libexslt">
+      <UniqueIdentifier>{06d72390-e896-46a6-b3c1-dc1a6e875287}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\libexslt\exslt.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\libexslt\functions.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\libexslt\math.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\libexslt\saxon.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\libexslt\sets.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\libexslt\strings.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\libexslt\common.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\libexslt</Filter>
     </ClCompile>
     <ClCompile Include="..\..\libexslt\crypto.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\libexslt</Filter>
     </ClCompile>
     <ClCompile Include="..\..\libexslt\date.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\libexslt</Filter>
     </ClCompile>
     <ClCompile Include="..\..\libexslt\dynamic.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\libexslt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libexslt\exslt.c">
+      <Filter>Source Files\libexslt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libexslt\functions.c">
+      <Filter>Source Files\libexslt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libexslt\math.c">
+      <Filter>Source Files\libexslt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libexslt\saxon.c">
+      <Filter>Source Files\libexslt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libexslt\sets.c">
+      <Filter>Source Files\libexslt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libexslt\strings.c">
+      <Filter>Source Files\libexslt</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\libexslt\exslt.h">
+      <Filter>Header Files\libexslt</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\libexslt\exsltconfig.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libexslt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\libexslt\exsltexports.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libexslt</Filter>
     </ClInclude>
     <ClInclude Include="..\..\libexslt\libexslt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\libexslt\exslt.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\libexslt</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
