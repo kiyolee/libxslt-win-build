@@ -62,7 +62,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="$(OutDir)\libxslt-static.lib $(OutDir)\libexslt-static.lib ..\..\..\libxml2-win-build\build-VS2008\$(ConfigurationName)\libxml2-static.lib ..\..\..\libiconv-win-build\build-VS2008\$(ConfigurationName)-static\libiconv-static.lib ..\..\..\zlib-win-build\build-VS2008\$(ConfigurationName)\libz-static.lib"
+				AdditionalDependencies="$(OutDir)\libxslt-static.lib $(OutDir)\libexslt-static.lib ..\..\..\libxml2-win-build\build-VS2008\$(ConfigurationName)\libxml2-static.lib ..\..\..\libiconv-win-build\build-VS2008\$(ConfigurationName)\libiconv-static.lib ..\..\..\zlib-win-build\build-VS2008\$(ConfigurationName)\libz-static.lib"
 				GenerateDebugInformation="true"
 				TargetMachine="1"
 			/>
@@ -133,7 +133,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="$(OutDir)\libxslt-static.lib $(OutDir)\libexslt-static.lib ..\..\..\libxml2-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)\libxml2-static.lib ..\..\..\libiconv-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)-static\libiconv-static.lib ..\..\..\zlib-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)\libz-static.lib"
+				AdditionalDependencies="$(OutDir)\libxslt-static.lib $(OutDir)\libexslt-static.lib ..\..\..\libxml2-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)\libxml2-static.lib ..\..\..\libiconv-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)\libiconv-static.lib ..\..\..\zlib-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)\libz-static.lib"
 				GenerateDebugInformation="true"
 				TargetMachine="17"
 			/>
@@ -204,7 +204,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="$(OutDir)\libxslt-static.lib $(OutDir)\libexslt-static.lib ..\..\..\libxml2-win-build\build-VS2008\$(ConfigurationName)\libxml2-static.lib ..\..\..\libiconv-win-build\build-VS2008\$(ConfigurationName)-static\libiconv-static.lib ..\..\..\zlib-win-build\build-VS2008\$(ConfigurationName)\libz-static.lib"
+				AdditionalDependencies="$(OutDir)\libxslt-static.lib $(OutDir)\libexslt-static.lib ..\..\..\libxml2-win-build\build-VS2008\$(ConfigurationName)\libxml2-static.lib ..\..\..\libiconv-win-build\build-VS2008\$(ConfigurationName)\libiconv-static.lib ..\..\..\zlib-win-build\build-VS2008\$(ConfigurationName)\libz-static.lib"
 				GenerateDebugInformation="true"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -278,7 +278,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="$(OutDir)\libxslt-static.lib $(OutDir)\libexslt-static.lib ..\..\..\libxml2-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)\libxml2-static.lib ..\..\..\libiconv-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)-static\libiconv-static.lib ..\..\..\zlib-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)\libz-static.lib"
+				AdditionalDependencies="$(OutDir)\libxslt-static.lib $(OutDir)\libexslt-static.lib ..\..\..\libxml2-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)\libxml2-static.lib ..\..\..\libiconv-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)\libiconv-static.lib ..\..\..\zlib-win-build\build-VS2008\$(PlatformName)\$(ConfigurationName)\libz-static.lib"
 				GenerateDebugInformation="true"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
