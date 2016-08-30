@@ -29,6 +29,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xsltproc-static", "xsltproc
 		{F8BD0B29-0447-4D95-9551-F54A69DE826D} = {F8BD0B29-0447-4D95-9551-F54A69DE826D}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B69D2EB1-CCD4-4DE9-A6B7-FD505194B0E7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testThreads", "tests\testThreads\testThreads.vcxproj", "{95B53D31-4480-4344-BE94-D9EE7820857F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4E956DAE-BCF7-4E4D-B304-2BB024570EC8} = {4E956DAE-BCF7-4E4D-B304-2BB024570EC8}
+		{E44D78FF-266E-4B5B-9BAD-9CDF070A100F} = {E44D78FF-266E-4B5B-9BAD-9CDF070A100F}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -85,8 +93,19 @@ Global
 		{905AD049-43B2-4D4C-925F-9C7C87D9146B}.Release|x64.Build.0 = Release|x64
 		{905AD049-43B2-4D4C-925F-9C7C87D9146B}.Release|x86.ActiveCfg = Release|Win32
 		{905AD049-43B2-4D4C-925F-9C7C87D9146B}.Release|x86.Build.0 = Release|Win32
+		{95B53D31-4480-4344-BE94-D9EE7820857F}.Debug|x64.ActiveCfg = Debug|x64
+		{95B53D31-4480-4344-BE94-D9EE7820857F}.Debug|x64.Build.0 = Debug|x64
+		{95B53D31-4480-4344-BE94-D9EE7820857F}.Debug|x86.ActiveCfg = Debug|Win32
+		{95B53D31-4480-4344-BE94-D9EE7820857F}.Debug|x86.Build.0 = Debug|Win32
+		{95B53D31-4480-4344-BE94-D9EE7820857F}.Release|x64.ActiveCfg = Release|x64
+		{95B53D31-4480-4344-BE94-D9EE7820857F}.Release|x64.Build.0 = Release|x64
+		{95B53D31-4480-4344-BE94-D9EE7820857F}.Release|x86.ActiveCfg = Release|Win32
+		{95B53D31-4480-4344-BE94-D9EE7820857F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95B53D31-4480-4344-BE94-D9EE7820857F} = {B69D2EB1-CCD4-4DE9-A6B7-FD505194B0E7}
 	EndGlobalSection
 EndGlobal
