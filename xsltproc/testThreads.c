@@ -20,10 +20,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#ifndef _REENTRANT
 #define _REENTRANT
+#endif
 #include <libxml/xmlversion.h>
 
-#if defined(LIBXML_THREAD_ENABLED) && defined(HAVE_PTHREAD_H)
+#if defined(LIBXML_THREAD_ENABLED) && 0 /* TODO: Windows port */
 
 #include <libxml/globals.h>
 #include <libxml/threads.h>
@@ -36,7 +38,9 @@
 #include <libxslt/xsltutils.h>
 #include <libxslt/extensions.h>
 #include <libexslt/exsltconfig.h>
+#ifdef HAVE_PTHREAD_H
 #include <pthread.h>
+#endif
 #include <string.h>
 #if !defined(_MSC_VER)
 #include <unistd.h>
