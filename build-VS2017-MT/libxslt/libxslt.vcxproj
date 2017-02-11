@@ -182,6 +182,9 @@
     <ClInclude Include="..\..\libxslt\xsltlocale.h" />
     <ClInclude Include="..\..\libxslt\xsltutils.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\win32\libxslt.rc" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
