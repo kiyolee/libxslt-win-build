@@ -77,7 +77,6 @@
       <PreprocessorDefinitions>LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;..\..\..\libxml2-win-build\include;..\..\..\libiconv-win-build\include;..\..\..\zlib-win-build</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <OmitDefaultLibName>true</OmitDefaultLibName>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -93,7 +92,6 @@
       <PreprocessorDefinitions>LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;..\..\..\libxml2-win-build\include;..\..\..\libiconv-win-build\include;..\..\..\zlib-win-build</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <OmitDefaultLibName>true</OmitDefaultLibName>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -111,7 +109,6 @@
       <PreprocessorDefinitions>LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;..\..\..\libxml2-win-build\include;..\..\..\libiconv-win-build\include;..\..\..\zlib-win-build</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <OmitDefaultLibName>true</OmitDefaultLibName>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -131,7 +128,6 @@
       <PreprocessorDefinitions>LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;..\..\..\libxml2-win-build\include;..\..\..\libiconv-win-build\include;..\..\..\zlib-win-build</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <OmitDefaultLibName>true</OmitDefaultLibName>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
