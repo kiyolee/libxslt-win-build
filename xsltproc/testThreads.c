@@ -11,7 +11,7 @@
  *       command line to test specifics, also add exslt
  */
 
-#if defined(WIN32) && !defined (__CYGWIN__) && (!__MINGW32__)
+#if defined(_WIN32) && !defined (__CYGWIN__) && (!__MINGW32__)
 #include <win32config.h>
 #else
 #include "config.h"
@@ -38,9 +38,7 @@
 #include <libxslt/xsltutils.h>
 #include <libxslt/extensions.h>
 #include <libexslt/exsltconfig.h>
-#ifdef HAVE_PTHREAD_H
 #include <pthread.h>
-#endif
 #include <string.h>
 #if !defined(_MSC_VER)
 #include <unistd.h>

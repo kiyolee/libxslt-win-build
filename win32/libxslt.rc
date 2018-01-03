@@ -1,9 +1,9 @@
 #include <winver.h>
 
-#define LIBXSLT_VERSION_STR     "1.1.29"
+#define LIBXSLT_VERSION_STR     "1.1.32"
 #define LIBXSLT_VER_MAJOR       1
 #define LIBXSLT_VER_MINOR       1
-#define LIBXSLT_VER_REVISION    29
+#define LIBXSLT_VER_REVISION    32
 
 #ifdef GCC_WINDRES
 VS_VERSION_INFO		VERSIONINFO

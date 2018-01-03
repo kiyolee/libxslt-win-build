@@ -42,16 +42,9 @@
 #include "imports.h"
 #include "transform.h"
 
-/* gettimeofday on Windows ??? */
-#if defined(WIN32) && !defined(__CYGWIN__)
-#ifdef _MSC_VER
-#include <winsock2.h>
-#pragma comment(lib, "ws2_32.lib")
-#define gettimeofday(p1,p2)
-#define HAVE_GETTIMEOFDAY
+#if defined(_WIN32) && !defined(__CYGWIN__)
 #define XSLT_WIN32_PERFORMANCE_COUNTER
-#endif /* _MS_VER */
-#endif /* WIN32 */
+#endif
 
 /************************************************************************
  *									*
@@ -457,9 +450,8 @@ xsltMessage(xsltTransformContextPtr ctxt, xmlNodePtr node, xmlNodePtr inst) {
 	} else if (xmlStrEqual(prop, (const xmlChar *)"no")) {
 	    terminate = 0;
 	} else {
-	    error(errctx,
+	    xsltTransformError(ctxt, NULL, inst,
 		"xsl:message : terminate expecting 'yes' or 'no'\n");
-	    ctxt->state = XSLT_STATE_ERROR;
 	}
 	xmlFree(prop);
     }
@@ -622,7 +614,8 @@ xsltPrintErrorContext(xsltTransformContextPtr ctxt,
     void *errctx = xsltGenericErrorContext;
 
     if (ctxt != NULL) {
-	ctxt->state = XSLT_STATE_ERROR;
+        if (ctxt->state == XSLT_STATE_OK)
+	    ctxt->state = XSLT_STATE_ERROR;
 	if (ctxt->error != NULL) {
 	    error = ctxt->error;
 	    errctx = ctxt->errctx;
@@ -715,7 +708,8 @@ xsltTransformError(xsltTransformContextPtr ctxt,
     char * str;
 
     if (ctxt != NULL) {
-	ctxt->state = XSLT_STATE_ERROR;
+        if (ctxt->state == XSLT_STATE_OK)
+	    ctxt->state = XSLT_STATE_ERROR;
 	if (ctxt->error != NULL) {
 	    error = ctxt->error;
 	    errctx = ctxt->errctx;
@@ -1248,6 +1242,8 @@ xsltDefaultSortFunction(xsltTransformContextPtr ctxt, xmlNodePtr *sorts,
 			if (res[j] == NULL) {
 			    if (res[j+incr] != NULL)
 				tst = 1;
+			} else if (res[j+incr] == NULL) {
+			    tst = -1;
 			} else {
 			    if (numb) {
 				/* We make NaN smaller than number in
@@ -1808,6 +1804,8 @@ static long calibration = -1;
  *
  * Returns the number of milliseconds used by xsltTimestamp()
  */
+#if !defined(XSLT_WIN32_PERFORMANCE_COUNTER) && \
+    (defined(HAVE_CLOCK_GETTIME) || defined(HAVE_GETTIMEOFDAY))
 static long
 xsltCalibrateTimestamps(void) {
     register int i;
@@ -1816,6 +1814,7 @@ xsltCalibrateTimestamps(void) {
 	xsltTimestamp();
     return(xsltTimestamp() / 1000);
 }
+#endif
 
 /**
  * xsltCalibrateAdjust:

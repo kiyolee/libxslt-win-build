@@ -31,6 +31,9 @@
 #ifdef HAVE_STDARG_H
 #include <stdarg.h>
 #endif
+#if defined(_WIN32) && !defined(__CYGWIN__)
+#include <fcntl.h>
+#endif
 #include <libxml/xmlmemory.h>
 #include <libxml/debugXML.h>
 #include <libxml/HTMLtree.h>
@@ -54,18 +57,11 @@
 
 #include <libexslt/exsltconfig.h>
 
-#if defined(WIN32) && !defined (__CYGWIN__)
-#if defined(_MSC_VER) || defined(__MINGW32__)
-#include <winsock2.h>
-#define gettimeofday(p1,p2)
-#endif /* _MS_VER */
-#else /* WIN32 */
 #if defined(HAVE_SYS_TIME_H)
 #include <sys/time.h>
 #elif defined(HAVE_TIME_H)
 #include <time.h>
 #endif
-#endif /* WIN32 */
 
 #ifdef HAVE_SYS_TIMEB_H
 #include <sys/timeb.h>
@@ -564,6 +560,10 @@ main(int argc, char **argv)
     srand(time(NULL));
     xmlInitMemory();
 
+#if defined(_WIN32) && !defined(__CYGINW__)
+    setmode(fileno(stdout), O_BINARY);
+    setmode(fileno(stderr), O_BINARY);
+#endif
 #if defined(_MSC_VER) && _MSC_VER < 1900
     _set_output_format(_TWO_DIGIT_EXPONENT);
 #endif
@@ -594,8 +594,8 @@ main(int argc, char **argv)
                    (!strcmp(argv[i], "-output")) ||
                    (!strcmp(argv[i], "--output"))) {
             i++;
-#if defined(WIN32) || defined (__CYGWIN__)
-	    output = xmlCanonicPath(argv[i]);
+#if defined(_WIN32) || defined (__CYGWIN__)
+	    output = (char *) xmlCanonicPath((xmlChar *) argv[i]);
             if (output == NULL)
 #endif
 		output = (char *) xmlStrdup((xmlChar *) argv[i]);
