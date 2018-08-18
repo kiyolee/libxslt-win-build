@@ -40,9 +40,9 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
-		Debug|Win32 = Debug|x86
+		Debug|Win32 = Debug|Win32
 		Release|x64 = Release|x64
-		Release|Win32 = Release|x86
+		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4E956DAE-BCF7-4E4D-B304-2BB024570EC8}.Debug|x64.ActiveCfg = Debug|x64
