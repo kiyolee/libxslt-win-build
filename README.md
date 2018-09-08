@@ -17,9 +17,9 @@ assuming all three libiconv-win-build, zlib-win-build, and libxml2-win-build sit
 Basically, in a command prompt:
 
 > \> cd {somewhere}\\  
-> \> git clone http://github.com/kiyolee/libiconv-win-build.git  
-> \> git clone http://github.com/kiyolee/zlib-win-build.git  
-> \> git clone http://github.com/kiyolee/libxml2-win-build.git  
-> \> git clone http://github.com/kiyolee/libxslt-win-build.git
+> \> git clone https://github.com/kiyolee/libiconv-win-build.git  
+> \> git clone https://github.com/kiyolee/zlib-win-build.git  
+> \> git clone https://github.com/kiyolee/libxml2-win-build.git  
+> \> git clone https://github.com/kiyolee/libxslt-win-build.git
 
 Build libiconv and zlib first and then libxml2 and finally libxslt, with the same corresponding Visual Studio solution of course.
