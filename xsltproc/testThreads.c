@@ -25,7 +25,7 @@
 #endif
 #include <libxml/xmlversion.h>
 
-#if defined(LIBXML_THREAD_ENABLED) && 0 /* TODO: Windows port */
+#if defined(LIBXML_THREAD_ENABLED) && defined(HAVE_PTHREAD_H)
 
 #include <libxml/globals.h>
 #include <libxml/threads.h>
