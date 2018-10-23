@@ -172,4 +172,8 @@ copy $(LIBXML2_LIB_DIR)libxml2.pdb $(OutDir)</Command>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <Target Name="AfterClean">
+    <Delete Files="$(OutDir)\libxml2.dll" ContinueOnError="true" />
+    <Delete Files="$(OutDir)\libxml2.pdb" ContinueOnError="true" />
+  </Target>
 </Project>
