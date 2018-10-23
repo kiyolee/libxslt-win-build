@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libxslt", "libxslt\libxslt.vcxproj", "{4E956DAE-BCF7-4E4D-B304-2BB024570EC8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libexslt", "libexslt\libexslt.vcxproj", "{E44D78FF-266E-4B5B-9BAD-9CDF070A100F}"
