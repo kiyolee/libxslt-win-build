@@ -2,7 +2,7 @@
 
 libxslt Windows build with Visual Studio.
 
-This version is libxslt-1.1.32.
+This version is libxslt-1.1.33.
 
 See win-build-info for general information about the
 win-build effort.
