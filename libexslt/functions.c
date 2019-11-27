@@ -291,7 +291,7 @@ exsltFuncFunctionFunction (xmlXPathParserContextPtr ctxt, int nargs) {
     xmlXPathObjectPtr oldResult, ret;
     exsltFuncData *data;
     exsltFuncFunctionData *func;
-    xmlNodePtr paramNode, oldInsert, fake;
+    xmlNodePtr paramNode, oldInsert, oldXPNode, fake;
     int oldBase;
     void *oldCtxtVar;
     xsltStackElemPtr params = NULL, param;
@@ -359,6 +359,9 @@ exsltFuncFunctionFunction (xmlXPathParserContextPtr ctxt, int nargs) {
         return;
     }
     tctxt->depth++;
+
+    /* Evaluating templates can change the XPath context node. */
+    oldXPNode = tctxt->xpathCtxt->node;
 
     /*
      * We have a problem with the evaluation of function parameters.
@@ -446,6 +449,7 @@ exsltFuncFunctionFunction (xmlXPathParserContextPtr ctxt, int nargs) {
     data->ctxtVar = oldCtxtVar;
     if (params != NULL)
 	xsltFreeStackElemList(params);
+    tctxt->xpathCtxt->node = oldXPNode;
 
     if (data->error != 0)
         goto error;
@@ -476,6 +480,7 @@ exsltFuncFunctionFunction (xmlXPathParserContextPtr ctxt, int nargs) {
 			 "executing a function\n",
 			 ctxt->context->functionURI, ctxt->context->function);
 	xmlFreeNode(fake);
+        xmlXPathFreeObject(ret);
 	goto error;
     }
     xmlFreeNode(fake);
@@ -669,7 +674,7 @@ exsltFuncResultComp (xsltStylesheetPtr style, xmlNodePtr inst,
      */
     sel = xmlGetNsProp(inst, (const xmlChar *) "select", NULL);
     if (sel != NULL) {
-	ret->select = xmlXPathCompile (sel);
+	ret->select = xsltXPathCompileFlags(style, sel, 0);
 	xmlFree(sel);
     }
     /*
