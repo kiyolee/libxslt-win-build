@@ -1,15 +1,6 @@
 #define IN_LIBEXSLT
 #include "libexslt/libexslt.h"
 
-#include <libxml/xmlversion.h>
-
-#if defined(WIN32) && !defined (__CYGWIN__) && !defined (__MINGW32__)
-#include <win32config.h>
-#else
-#include "config.h"
-#endif
-
-#include <libxslt/xsltconfig.h>
 #include <libxslt/extensions.h>
 
 #include <libexslt/exsltconfig.h>

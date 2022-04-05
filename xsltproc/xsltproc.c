@@ -88,6 +88,11 @@ static int profile = 0;
 
 #define MAX_PARAMETERS 64
 #define MAX_PATHS 64
+#ifdef _WIN32
+# define PATH_SEPARATOR ';'
+#else
+# define PATH_SEPARATOR ':'
+#endif
 
 static int options = XSLT_PARSE_OPTIONS;
 static const char *params[MAX_PARAMETERS + 1];
@@ -103,6 +108,7 @@ static const char *writesubtree = NULL;
 /*
  * Entity loading control and customization.
  */
+
 static
 void parsePath(const xmlChar *path) {
     const xmlChar *cur;
@@ -115,10 +121,10 @@ void parsePath(const xmlChar *path) {
 	    return;
 	}
 	cur = path;
-	while ((*cur == ' ') || (*cur == ':'))
+	while ((*cur == ' ') || (*cur == PATH_SEPARATOR))
 	    cur++;
 	path = cur;
-	while ((*cur != 0) && (*cur != ' ') && (*cur != ':'))
+	while ((*cur != 0) && (*cur != ' ') && (*cur != PATH_SEPARATOR))
 	    cur++;
 	if (cur != path) {
 	    paths[nbpaths] = xmlStrndup(path, cur - path);
@@ -513,6 +519,8 @@ static void usage(const char *name) {
     printf("\t--maxdepth val : increase the maximum depth (default %d)\n", xsltMaxDepth);
     printf("\t--maxvars val : increase the maximum variables (default %d)\n", xsltMaxVars);
     printf("\t--maxparserdepth val : increase the maximum parser depth\n");
+    printf("\t--huge: relax any hardcoded limit from the parser\n");
+    printf("\t             fixes \"parser error : internal error: Huge input lookup\"\n");
     printf("\t--seed-rand val : initialize pseudo random number generator with specific seed\n");
 #ifdef LIBXML_HTML_ENABLED
     printf("\t--html: the input document is(are) an HTML file(s)\n");
@@ -540,8 +548,7 @@ static void usage(const char *name) {
 #endif
     printf("\t--load-trace : print trace of all external entites loaded\n");
     printf("\t--profile or --norman : dump profiling information \n");
-    printf("\nProject libxslt home page: http://xmlsoft.org/XSLT/\n");
-    printf("To report bugs and get help: http://xmlsoft.org/XSLT/bugs.html\n");
+    printf("\nProject libxslt home page: https://gitlab.gnome.org/GNOME/libxslt\n");
 }
 
 int
@@ -770,6 +777,9 @@ main(int argc, char **argv)
                 if (value > 0)
                     xmlParserMaxDepth = value;
             }
+        } else if ((!strcmp(argv[i], "-huge")) ||
+                   (!strcmp(argv[i], "--huge"))) {
+            options |= XML_PARSE_HUGE;
         } else if ((!strcmp(argv[i], "-seed-rand")) ||
                    (!strcmp(argv[i], "--seed-rand"))) {
             int value;
