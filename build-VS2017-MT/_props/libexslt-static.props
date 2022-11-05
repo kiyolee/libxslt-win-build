@@ -14,7 +14,6 @@
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <OmitDefaultLibName>true</OmitDefaultLibName>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -22,7 +21,6 @@
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <OmitDefaultLibName>true</OmitDefaultLibName>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -30,7 +28,6 @@
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <OmitDefaultLibName>true</OmitDefaultLibName>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -38,7 +35,6 @@
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <OmitDefaultLibName>true</OmitDefaultLibName>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup />

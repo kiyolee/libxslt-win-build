@@ -14,7 +14,6 @@
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <OmitDefaultLibName>true</OmitDefaultLibName>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -23,7 +22,6 @@
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <OmitDefaultLibName>true</OmitDefaultLibName>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -32,7 +30,6 @@
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <OmitDefaultLibName>true</OmitDefaultLibName>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -41,7 +38,6 @@
       <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <OmitDefaultLibName>true</OmitDefaultLibName>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
   </ItemDefinitionGroup>
