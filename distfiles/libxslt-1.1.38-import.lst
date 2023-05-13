@@ -4,7 +4,7 @@ Copyright
 FEATURES
 INSTALL
 NEWS
-README.libxslt
+README.libxslt.md
 TODO
 libexslt/common.c
 libexslt/crypto.c

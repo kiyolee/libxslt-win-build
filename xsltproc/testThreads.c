@@ -104,7 +104,7 @@ threadRoutine1(void *data)
     xmlChar *result;
     int len;
     xsltStylesheetPtr cur;
-    int id = (int)(unsigned long) data;
+    int id = (int) (size_t) data;
 
     input = xmlReadMemory(doc, strlen(doc), "doc.xml", NULL, 0);
     if (input == NULL) {
@@ -209,7 +209,7 @@ main(void)
 
 	for (i = 0; i < num_threads; i++) {
 	    ret = pthread_create(&tid[i], NULL, threadRoutine1,
-                                 (void *) (unsigned long) i);
+                                 (void *) (size_t) i);
 	    if (ret != 0) {
 		perror("pthread_create");
 		exit(1);
