@@ -5,44 +5,45 @@
     <Import Project="win-build.props" />
     <Import Project="libiconv.props" />
     <Import Project="zlib.props" />
+    <Import Project="liblzma.props" />
     <Import Project="libxml2.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>setargv.obj;ws2_32.lib;$(OutDir)libxslt-static.lib;$(OutDir)libexslt-static.lib;$(LIBXML2_LIB_DIR)libxml2-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;$(LIBICONV_LIB_DIR)libiconv-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>setargv.obj;ws2_32.lib;$(OutDir)libxslt-static.lib;$(OutDir)libexslt-static.lib;$(LIBXML2_LIB_DIR)libxml2-static.lib;$(LIBICONV_LIB_DIR)libiconv-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;$(LIBLZMA_LIB_DIR)liblzma-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>setargv.obj;ws2_32.lib;$(OutDir)libxslt-static.lib;$(OutDir)libexslt-static.lib;$(LIBXML2_LIB_DIR)libxml2-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;$(LIBICONV_LIB_DIR)libiconv-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>setargv.obj;ws2_32.lib;$(OutDir)libxslt-static.lib;$(OutDir)libexslt-static.lib;$(LIBXML2_LIB_DIR)libxml2-static.lib;$(LIBICONV_LIB_DIR)libiconv-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;$(LIBLZMA_LIB_DIR)liblzma-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>setargv.obj;ws2_32.lib;$(OutDir)libxslt-static.lib;$(OutDir)libexslt-static.lib;$(LIBXML2_LIB_DIR)libxml2-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;$(LIBICONV_LIB_DIR)libiconv-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>setargv.obj;ws2_32.lib;$(OutDir)libxslt-static.lib;$(OutDir)libexslt-static.lib;$(LIBXML2_LIB_DIR)libxml2-static.lib;$(LIBICONV_LIB_DIR)libiconv-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;$(LIBLZMA_LIB_DIR)liblzma-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(ZLIB_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\libxslt;$(LIBXML2_INC_DIR);$(LIBICONV_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBEXSLT_STATIC;LIBXSLT_STATIC;LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>setargv.obj;ws2_32.lib;$(OutDir)libxslt-static.lib;$(OutDir)libexslt-static.lib;$(LIBXML2_LIB_DIR)libxml2-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;$(LIBICONV_LIB_DIR)libiconv-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>setargv.obj;ws2_32.lib;$(OutDir)libxslt-static.lib;$(OutDir)libexslt-static.lib;$(LIBXML2_LIB_DIR)libxml2-static.lib;$(LIBICONV_LIB_DIR)libiconv-static.lib;$(ZLIB_LIB_DIR)libz-static.lib;$(LIBLZMA_LIB_DIR)liblzma-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
