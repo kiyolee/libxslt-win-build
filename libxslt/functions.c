@@ -100,26 +100,26 @@ xsltDocumentFunctionLoadDocument(xmlXPathParserContextPtr ctxt, xmlChar* URI)
 {
     xsltTransformContextPtr tctxt;
     xmlURIPtr uri;
-    xmlChar *fragment;
+    xmlChar *fragment = NULL;
     xsltDocumentPtr idoc; /* document info */
     xmlDocPtr doc;
     xmlXPathContextPtr xptrctxt = NULL;
     xmlXPathObjectPtr resObj = NULL;
 
+    (void) xptrctxt;
+
     tctxt = xsltXPathGetTransformContext(ctxt);
     if (tctxt == NULL) {
 	xsltTransformError(NULL, NULL, NULL,
 	    "document() : internal error tctxt == NULL\n");
-	valuePush(ctxt, xmlXPathNewNodeSet(NULL));
-	return;
+        goto out_fragment;
     }
 
     uri = xmlParseURI((const char *) URI);
     if (uri == NULL) {
 	xsltTransformError(tctxt, NULL, NULL,
 	    "document() : failed to parse URI\n");
-	valuePush(ctxt, xmlXPathNewNodeSet(NULL));
-	return;
+        goto out_fragment;
     }
 
     /*
@@ -147,12 +147,7 @@ xsltDocumentFunctionLoadDocument(xmlXPathParserContextPtr ctxt, xmlChar* URI)
 	    */
 	    doc = tctxt->style->doc;
 	} else {
-	    valuePush(ctxt, xmlXPathNewNodeSet(NULL));
-
-	    if (fragment != NULL)
-		xmlFree(fragment);
-
-	    return;
+            goto out_fragment;
 	}
     } else
 	doc = idoc->doc;
@@ -164,7 +159,7 @@ xsltDocumentFunctionLoadDocument(xmlXPathParserContextPtr ctxt, xmlChar* URI)
 
     /* use XPointer of HTML location for fragment ID */
 #ifdef LIBXML_XPTR_ENABLED
-    xptrctxt = xmlXPtrNewContext(doc, NULL, NULL);
+    xptrctxt = xmlXPathNewContext(doc);
     if (xptrctxt == NULL) {
 	xsltTransformError(tctxt, NULL, NULL,
 	    "document() : internal error xptrctxt == NULL\n");
