@@ -3,7 +3,7 @@
 0cd9a07afbeb24026c9b03aecfeba458  Copyright
 0d9bd2fa90bd3a631ca9d9aabd801345  FEATURES
 0204c456fe221f77aff226b90e9aab06  INSTALL
-07dcb2cd9ac5f5ffef5968553286b100  NEWS
+833e3cddf0539199440e47c6d5c0afb1  NEWS
 eef64f647c5d3389744959576a6ab6fd  README.libxslt.md
 1671e62be479162b8d9a012c81bc235e  TODO
 8912730100a2f79c41f5dd2723a9a32b  libexslt/common.c
@@ -14,7 +14,7 @@ d33e58bd10bcc83e0feabf76eb071ca6  libexslt/exslt.c
 e3f739c7235640b1ba7c8e8928a63c82  libexslt/exslt.h
 4a24ae19aba4feafb1acd0e8d4e880cb  libexslt/exsltexports.h
 9c827585e79fd57f929071eadc224ef6  libexslt/functions.c
-7ce44d0060940ebdff26709d8ef46214  libexslt/libexslt.h
+33f2c417882aaa9a9be9cd98231e144f  libexslt/libexslt.h
 5f0739e9a825c3623ba1b40b0008261f  libexslt/math.c
 3bce123d618557a268f12b13c9457b4b  libexslt/saxon.c
 3c0cf99d615b4758655a3a26929ae7c9  libexslt/sets.c
@@ -34,7 +34,7 @@ a6b2cbb8cd1dccec345b9b1cb0e6c178  libxslt/functions.c
 66e26ad969e3c37fdeedcbc2716d7cf3  libxslt/imports.h
 288a83e2af3c512f3dfbf84f3bbb084a  libxslt/keys.c
 77a11ee3de841d02d3461b829cfcc11e  libxslt/keys.h
-ae222b9c12da991dca0f511bbff72bed  libxslt/libxslt.h
+0a869195da28a2f69a5f574e56b9d099  libxslt/libxslt.h
 e36c1ec3153a21e117c539ab6895bce9  libxslt/namespaces.c
 c784b4b8e80274491fe023ce26d4847b  libxslt/namespaces.h
 6e68180e30aa824ca7e903262e3d4ab0  libxslt/numbers.c
@@ -63,4 +63,4 @@ da1d63c112c339b051a9155359b6d2d7  libxslt/xsltlocale.h
 bd4637142f205d1664246f15be69e3e4  libxslt/xsltutils.c
 9eeea4bbd2cbafc8a7ed24420cb9b11c  libxslt/xsltutils.h
 cff031fc94f7f45e58e1559e4065029b  xsltproc/testThreads.c
-6893c7e37fb52e73ae5df02f748c2e14  xsltproc/xsltproc.c
+d0377478a8503bc011b3f2b4c9a0789f  xsltproc/xsltproc.c
