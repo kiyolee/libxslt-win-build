@@ -2,7 +2,7 @@
 
 libxslt Windows build with Visual Studio.
 
-This version is libxslt-1.1.42.
+This version is libxslt-1.1.43.
 
 Note that LZMA support is now available for libxml2-2.12.0 or later but only for VS2013 or later.
 
