@@ -1,8 +1,8 @@
-5b02669437670161c86e18fe64105301  AUTHORS
+19eee4c025f2977d49f6247251425095  AUTHORS
 0cd9a07afbeb24026c9b03aecfeba458  Copyright
 0d9bd2fa90bd3a631ca9d9aabd801345  FEATURES
 0204c456fe221f77aff226b90e9aab06  INSTALL
-3b9127d2910335ad1b55951ef7f6844f  NEWS
+71e9c5bf17f635347917978575decad6  NEWS
 eef64f647c5d3389744959576a6ab6fd  README.libxslt.md
 1671e62be479162b8d9a012c81bc235e  TODO
 8912730100a2f79c41f5dd2723a9a32b  libexslt/common.c
@@ -12,7 +12,7 @@ cf9d8554d6d4530980f07a0c110cff00  libexslt/dynamic.c
 d33e58bd10bcc83e0feabf76eb071ca6  libexslt/exslt.c
 e3f739c7235640b1ba7c8e8928a63c82  libexslt/exslt.h
 4a24ae19aba4feafb1acd0e8d4e880cb  libexslt/exsltexports.h
-9c827585e79fd57f929071eadc224ef6  libexslt/functions.c
+96da2b5faa2cf9d618e00b59750c03fc  libexslt/functions.c
 33f2c417882aaa9a9be9cd98231e144f  libexslt/libexslt.h
 c289c932c158e0a4899c4a6e4258279e  libexslt/math.c
 3bce123d618557a268f12b13c9457b4b  libexslt/saxon.c
@@ -27,7 +27,7 @@ ad65dd2bf68938a4a1df976f5de6b04b  libxslt/attrvt.c
 45e4867f0daebf1eb905471a4be5184c  libxslt/extensions.h
 e203d3012061029953db472adc29f3d3  libxslt/extra.c
 94fe9ce1c0c47724aae4a1bcb8c29433  libxslt/extra.h
-3f1223a8442a8cbfafb4c040e5872d70  libxslt/functions.c
+417a51afb903eb378c7132b22169c5e2  libxslt/functions.c
 052fd28e9971416b2bbebdc3d1103c4e  libxslt/functions.h
 6d4aaa7ff80654536ce32bf36602fa03  libxslt/imports.c
 66e26ad969e3c37fdeedcbc2716d7cf3  libxslt/imports.h
@@ -46,11 +46,12 @@ adf6b78e6c68a7d34ae680f6dc3f5240  libxslt/pattern.h
 1b24b61ea6afe01d18c647c94b1245c7  libxslt/security.h
 4c97dca7a2bf3197bfba014131efb55c  libxslt/templates.c
 6901f4c8fad239b588b9f6d4cdfef5ac  libxslt/templates.h
-6fd5c491d96853aa63fbdbb773db54c8  libxslt/transform.c
+24972ad16fc1d485e971cb29ee5099d7  libxslt/transform.c
 ccbcce4553f3231003b1944002814246  libxslt/transform.h
+d034084359f34dc640b1944c107dc8e8  libxslt/transformInternals.h
 7da7b1fcf378330699c7ecdd96908641  libxslt/trio.h
 e41149b088de4a04c067c85969f4db3c  libxslt/triodef.h
-1586329d6ef66c9aef3f1392368c41ef  libxslt/variables.c
+72699370eb8ba14af881c37a3fc52809  libxslt/variables.c
 08a56c0d4d50e48e897bf5eb4554d525  libxslt/variables.h
 9f9dd8c70f50b3d5694a6ee06f400a02  libxslt/win32config.h
 48c3f1965af25904069cf4f6b862d317  libxslt/xslt.c

@@ -48,6 +48,7 @@ libxslt/templates.c
 libxslt/templates.h
 libxslt/transform.c
 libxslt/transform.h
+libxslt/transformInternals.h
 libxslt/trio.h
 libxslt/triodef.h
 libxslt/variables.c

@@ -1,5 +1,40 @@
 NEWS file for libxslt
 
+v1.1.45: Nov 30 2025
+
+## Major changes
+
+Rebuild of v1.1.44
+
+v1.1.44: Nov 23 2025
+
+## Major changes
+
+Libxml2 changed the meta tag information, removed the:
+`http-equiv="Content-Type" content="text/html;` attributes leaving
+only the `charset` attribute. This caused the tests to fail in the
+gitlab pipeline. Updated the test files accordingly.
+
+## Security
+
+- [CVE-2025-9714] Fix: Was a false positive, closed issue #148.
+- [CVE-2025-7424] Fix: Type confusion in xmlNode.psvi between stylesheet and source
+                  nodes (Fixed by Apple's engineers)
+- [CVE-2025-11731] Fix: End function node ancestor search at document
+
+### Bug fixes
+
+- New maintainer: Iván Chavero
+- CMake: cannot configure on MinGW-w64, missing Iconv::Iconv
+- Reset context variable when evaluating globals
+
+### Tests
+
+- Update test outputs for new libxml2
+- Fixed Windows tests
+
+### Build
+
 v1.1.43: Mar 12 2025
 
 ### Major changes
