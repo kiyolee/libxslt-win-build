@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <LIBXML2_INC_DIR>..\..\..\..\libxml2-win-build\include\</LIBXML2_INC_DIR>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='Win32'" Label="UserMacros">
+    <LIBXML2_LIB_DIR>..\..\..\..\libxml2-win-build\$(BUILD_VSENV)\$(Configuration)\</LIBXML2_LIB_DIR>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='x64'" Label="UserMacros">
+    <LIBXML2_LIB_DIR>..\..\..\..\libxml2-win-build\$(BUILD_VSENV)\$(Platform)\$(Configuration)\</LIBXML2_LIB_DIR>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="LIBXML2_INC_DIR">
+      <Value>$(LIBXML2_INC_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIBXML2_LIB_DIR">
+      <Value>$(LIBXML2_LIB_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
